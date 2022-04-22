@@ -14,6 +14,7 @@ function loadIndex() {
         href.innerText = link.label;
 
         li.appendChild(href);
-        ol.appendChild(li);})
+        ol.appendChild(li);
+    })
 
 }
