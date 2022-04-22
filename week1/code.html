@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Always change the Title to match what the page is going to do-->
     <title>Story Writer</title>
 <script>
     function loadStory(){
         var storyName = document.getElementById("name_input").value
+        //we assign the storyHTML value of saveStory() to the storyHTML variable using its localStorage Key (storyName)
         var storyHTML = localStorage.getItem(storyName)
         document.getElementById("story_editor").value=storyHTML
     }
     function saveStory(){
         var storyName = document.getElementById("name_input").value
         var storyHTML = document.getElementById("story_editor").value
+        //localStorage use the Key-value pairs technique Key=storyName and Value=storyHTML 
         localStorage(storyName, storyHTML)
     }
     function displayStory(){
