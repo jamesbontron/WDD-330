@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type="text/css" href='week3.css' media="screen">
+    <title>Week 3 Notes</title>
+</head>
+<body>
+    <h1>Week 3 Notes</h1>
+    <div class="flexbox">
+        <h2>Object Methods: This</h2>
+        <ul>
+            <li>To access the object, a method can use the 'this' keyword. The value of this is the object “before dot”, the one used to call the method.</li>
+            <li>In JavaScript, keyword this behaves unlike most other programming languages. It can be used in any function, even if it's not a method of an object.</li>
+            <li>Arrow functions are special: they don't have their “own” this. If we reference this from such a function, it's taken from the outer “normal” function.</li>
+        </ul>
+    </div>
+    <div class="flexbox">
+        <h2>Chapter 5: Objects</h2>
+        <ul>
+            <li>An object literal is an object that is created directly in the language by wrapping all its properties and methods in curly braces {}.</li>
+            <li>To create an object literal, simply enter a pair of curly braces const notes = {}</li>
+            <li>It's also possible to create an object using a constructor function const notes = new Object();</li>
+            <li>The in operator can be used to check whether an object has a particular property.</li>
+            <li>We can loop through all of an object's properties and methods by using a for in loop. This is useful to call each property, method or even to insert data in a more efficient way (it is like creating an object generator)</li>
+        </ul>
+    </div>
+    <div class="flexbox">
+        <h2>Chapter 6: DOM</h2>
+        <ul>
+            <li>The Document Object Model (DOM) allows you to access elements of a web page and enable interaction with the page by adding and removing elements, changing the order, content and attributes of elements, and even altering how they are styled.</li>
+            <li>Each element of HTML can have an id or class where we can retrieve the data or format it If necessary, through JavaScript. An example of code is defining a variable to access the body of an HTML file const body = document.body;</li>
+            <li>getElementsByClassName() will return a live node list of all elements that have the class name that is supplied as an argument. The node lists returned by the document.getElementsByClassName() and document.getElementsByTagName() methods are live collections that will update to reflect any changes on the page</li>
+            <li>The document.querySelector() method allows you to use CSS notation to find the first element in the document that matches that matches a CSS selector</li>
+            <li>The setAttribute can change the value of an element's attributes</li>
+            <li>InnerHTML returns all the child elements of an element as a string of HTML. </li>
+            <li>Every element node has a style property. This can be used to dynamically modify the presentation of any element on a web page.</li>
+        </ul>
+    </div>
+    <div class="flexbox">
+        <h2>Chapter 7: Events</h2>
+        <ul>
+            <li>Whenever an event handler is triggered by an event, the callback function is called. This function is automatically passed an event object as a parameter that contains information about the event.</li>
+            <li>The addEventListener() method is called on a node object, the node to which the event listener is being applied</li>
+            <li>Mouse Eventes:</li>
+            <ul>
+                <li>click</li>
+                <li>mousedown</li>
+                <li>mouseup</li>
+                <li>dblclick</li>
+                <li>highlight</li>
+                <li>mousemove</li>
+                <li>mouseover</li>
+                <li>mouseout</li>
+            </ul>
+            <li>Keyboard Events:</li>
+            <ul>
+                <li>keydown</li>
+                <li>keyup</li>
+                <li>keypress</li>
+            </ul>
+            <li>Touch Events:</li>
+            <ul>
+                <li>touchstart</li>
+                <li>touchend</li>
+            </ul>
+        </ul>
+    </div>
+</body>
+</html>
