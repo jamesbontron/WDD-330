@@ -6,6 +6,10 @@ const links = [
     {
       label: "Week 2 notes",
       url: "week2/project_ninja.html"
+    },
+    {
+      label: "Week 3 Notes",
+      url: "week3/week3.html"
     }
   ]
 function loadIndex() {
