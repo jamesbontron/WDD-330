@@ -5,25 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="todo.css">
 
-    <title>Week 5 To Do</title>
+    <title>Week 5 To Do App</title>
 
 </head>
 <body>
     <h1>Todos</h1>
     <section class="task-list" onload="populate()">
-
     </section>
-    
-
-
     <span>
         <p id="remaining"></p>
-        <button type="button" onclick="showAll()">All</button>
-        <button type="button" onclick="showActive()">Active</button>
-        <button type="button" onclick="showCompleted()">Completed</button>
+        <button type="button" onclick="showAll()">Show All</button>
+        <button type="button" onclick="showActive()">Show Active</button>
+        <button type="button" onclick="showCompleted()">Show Completed</button>
     </span>
     <form>
-        <input type="text" id="inputbox" name="inputbox">
+        <input type="text" id="inputbox" name="inputbox" placeholder="Add a Task">
         <button type="button" onclick="getTask()">+</button>
     </form>
     <script src="todo.js"></script>
