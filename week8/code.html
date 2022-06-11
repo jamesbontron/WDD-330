@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas, SVG, and Drag and Drop</title>
+    <link rel='stylesheet' type="text/css" href='style.css' media="screen">
+</head>
+<body>
+    <h1>Chapter 12</h1>
+    <div class="flex-notes">
+        <h2>Canvas Notes</h2>
+        <p>With HTML5's Canvas API, we can draw anything we can imagine, all through JavaScript</p>
+        <p>We can draw shapes and lines, arcs and text, gradients and patterns.</p>
+        <p>The first step to using canvas is to add a canvas element to the page. The canvas element takes both a width and height attribute, which must also be set</p>
+        <p>All drawing on the canvas happens via the Canvas JavaScript API. </p>
+        <p>The coordinate system in the canvas element is different from the Cartesian coordinate system you learned in math class. In the canvas coordinate system, the top-left corner is (0,0). If the canvas is 200 pixels by 200 pixels, then the bottom-right corner is (200,200)</p>
+        <p>If we create an image programmatically using the Canvas API, but decide we'd like to have a local copy of our drawing, we can use the API's toDataURL method to save our drawing. toDataURL creates a URL with the image in it, (either a png or jpg, whichever is specified)</p>
+        <p>Once we've drawn an image on the canvas, we can use the getImageData method from the Canvas API to manipulate the pixels of that image. For example, if we wanted to convert our logo from color to black and white, we can do so using methods in the Canvas API.</p>
+    </div>
+    <div class="flex-notes">
+        <h2>Canvas Example</h2>
+        <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+            Sorry! Your browser doesn't support Canvas.
+        </canvas>
+    </div>
+    <div class="flex-notes">
+        <h2>Drag and Drop</h2>
+        <p>You can change the order of the letters</p>
+        <div class="container">
+            <div draggable="true" class="box">A</div>
+            <div draggable="true" class="box">B</div>
+            <div draggable="true" class="box">C</div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
