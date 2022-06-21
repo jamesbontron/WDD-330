@@ -51,26 +51,49 @@
             <td>Resizes the window to the specified width and height</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>scroll()</td>
+            <td>Deprecated. This method has been replaced by the scrollTo() method.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>stop()</td>
+            <td>Stops the window from loading</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Windows Properties</th>
+            <th>Definition</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>closed</td>
+            <td>Returns a boolean true if a window is closed.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>document</td>
+            <td>Returns the Document object for the window.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>history</td>
+            <td>Returns the History object for the window.</td>
         </tr>
-      </table>
+        <tr>
+            <td>name</td>
+            <td>Sets or returns the name of a window</td>
+        </tr>
+        <tr>
+            <td>opener</td>
+            <td>Returns a reference to the window that created the window</td>
+        </tr>
+        <tr>
+            <td>screen</td>
+            <td>Returns the Screen object for the window</td>
+        </tr>
+        <tr>
+            <td>sessionStorage</td>
+            <td>Allows to save key/value pairs in a web browser. Stores the data for one session</td>
+        </tr>
+    </table>
+
     <p>Each window object contains a document object. This object has properties and methods that deal with the page that has been loaded into the window.</p>
     <p>Cookies are session cookies by default. This means they are deleted once a browser session is finished (when the user closes the browser tab or window). Cookies can be made persistent ― that is, lasting beyond the browser session </p>
     <p>By default, cookies can only be read by pages inside the same directory and domain as the file was set. This is for security reasons so that access to the cookie is limited.</p>
