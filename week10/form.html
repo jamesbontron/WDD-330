@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" type="text/css" href="form.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Client Side Validation Form</h2>
+        </div>
+        <form id="form" class="form" action="index.html" method="POST" name="myForm">
+            <div class="form-control">
+                <label for="first_name">First Name</label>
+                <input type="text" placeholder="Alejandro" id="first_name" name="first_name" pattern="([^\s][A-z0-9À-ž\s]+)" required/>
+            </div>
+        <div class="form-control">
+          <label for="lastname">Last Name</label>
+          <input type="text" placeholder="Naranjo" id="lastname" name="last_name" pattern="([^\s][A-z0-9À-ž\s]+)" required/>
+        </div>
+        <div class="form-control">
+          <label for="address">Address</label>
+          <textarea placeholder="Address: Street Address, City, State and Zip" id="address" name = "address" rows="4" cols="42" required></textarea>
+        </div>
+        <div class="form-control">
+          <label for="phone">Phone</label>
+          <input type="tel" placeholder="XXX-XXX-XXXX" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+        </div>
+        <div class="form-control">
+          <label for="credit_card_number">Credit Card Number</label>
+          <input id="credit_card_number" type="tel" name="credit_card" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required>
+        </div>
+        <div class="form-control">
+          <label for="date">Expiration Date</label>
+          <input class="required" type="date" id="exp_date" name="exp_date" placeholder="month/year" required>
+        </div>
+        <button type="reset" onclick="focusMethod" value="Reset">Reset</button>
+        <button type="submit" name="submit" value="Submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
