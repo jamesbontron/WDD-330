@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Always change the Title to match what the page is going to do-->
+    <link rel='stylesheet' type="text/css" href='../style.css' media="screen">
     <title>Story Writer</title>
 <script>
     function loadStory(){
@@ -34,14 +35,36 @@
 </head>
 
 <body>
-    <h1>Story Editor</h1>
-    Story Name:<input id=name_input></input>
-    <section>
-        <button onclick="loadStory()">Find and Edit It</button>
-        <button onclick="saveStory()">Save It</button>
-        <button onclick="displayStory()">Display It</button>
-    </section>   
-    <textarea id="story_editor" placeholder="Write a totally awesome story here"></textarea>
-    <section id="story_display"></section>
+    <header>
+        <img src="../logo.png" alt="logo">
+        <h2>Wecolme to WDD-330</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        
+    </nav>
+    <main>
+        <h1>Story Editor</h1>
+        Story Name:<input id=name_input></input>
+        <section>
+            <button onclick="loadStory()">Find and Edit It</button>
+            <button onclick="saveStory()">Save It</button>
+            <button onclick="displayStory()">Display It</button>
+        </section>   
+        <textarea id="story_editor" placeholder="Write a totally awesome story here"></textarea>
+        <section id="story_display"></section>
+    </main>
+    <footer>
+        <p>&copy; Alejandro Portfolio, All rights reserved.</p>
+        <p>
+            All images used are believed to be in "Fair Use".
+            Please notify the author if any are not and they
+            will be removed.
+        </p>
+        <p>Last Updated: 21 July, 2022</p>
+    </footer>
 </body>
 </html>
