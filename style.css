@@ -61,6 +61,19 @@ footer{
     font-size: small;
     border-top: 4px solid black;
 }
+table, td, th {
+    height: 50px;
+     border: 1px solid;
+     
+   }
+   
+   table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 3em;
+     width: 40em;
+   }
+
 
 @media only screen and (min-width: 768px) {
     header img{
